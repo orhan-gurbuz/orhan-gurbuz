@@ -1,1 +1,8 @@
+def calculate_otv(arac_fiyati):
+    oran = 0.20  # ÖTV oranı %20 olarak varsayalım
+    otv_miktari = arac_fiyati * oran
+    return otv_miktari
 
+arac_fiyati = float(input("Araç fiyatını girin: "))
+otv = calculate_otv(arac_fiyati)
+print(f"ÖTV miktarı: {otv:.2f} TL")
